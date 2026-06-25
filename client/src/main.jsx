@@ -6,7 +6,8 @@ import './offers.css';
 import './payment.css';
 
 const API=import.meta.env.VITE_API_URL||'http://localhost:5000/api';
-const api=async(path,options={})=>{const session=JSON.parse(localStorage.getItem('zentra_session')||'null');const response=await fetch(`${API}${path}`,{...options,headers:{'Content-Type':'application/json',...(session?{Authorization:`Bearer ${session.token}`}:{ }),...(options.headers||{})}});const text=await response.text();const data=text?JSON.parse(text):{};if(!response.ok)throw new Error(data.message||'Request failed');return data};
+const wait=ms=>new Promise(resolve=>setTimeout(resolve,ms));
+const api=async(path,options={},attempt=0)=>{const session=JSON.parse(localStorage.getItem('zentra_session')||'null');try{const response=await fetch(`${API}${path}`,{...options,headers:{'Content-Type':'application/json',...(session?{Authorization:`Bearer ${session.token}`}:{ }),...(options.headers||{})}});const text=await response.text();const data=text?JSON.parse(text):{};if(!response.ok)throw new Error(data.message||'Request failed');return data}catch(error){console.error(`API request failed: ${path}`,error);if(attempt<2){await wait(1200*(attempt+1));return api(path,options,attempt+1)}throw error}};
 const Store=createContext(); const useStore=()=>useContext(Store); const money=n=>new Intl.NumberFormat('en-IN',{style:'currency',currency:'INR',maximumFractionDigits:0}).format(n);
 const oldPriceFor=p=>p.oldPrice||Math.round((p.price*1.2)/10)*10;
 const dealFor=p=>p.featured?'HOT DEAL':p.category==='Fashion'?'30% OFF':p.category==='Tech'?'20% OFF':p.category==='Accessories'?'25% OFF':'SALE';
