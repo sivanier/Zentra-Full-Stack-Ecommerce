@@ -2,6 +2,18 @@
 
 Zentra is a premium, Gen Z-styled full-stack e-commerce platform. It supports product discovery, filtering and search, promotional sale sections, authenticated shopping carts, simulated checkout, order history, admin product controls, dark mode, and responsive layouts.
 
+## Features
+
+- User registration and login
+- Product search and category filters
+- Shopping cart management
+- Simulated checkout (UPI, Card, COD)
+- Order history tracking
+- Admin product management
+- Promotional banners and offer cards
+- Responsive dark-mode UI
+- Forgot password functionality
+
 ## Stack
 
 - React + Vite + vanilla CSS frontend
@@ -60,4 +72,20 @@ Push the repository, create a Render Blueprint from `render.yaml`, and set `MONG
 
 ### Frontend: GitHub Pages
 
-Set `VITE_API_URL` in the GitHub Actions build environment to `https://YOUR-RENDER-URL/api`. Build the client with `npm run build --prefix client`, then deploy `client/dist`. Update `client/vite.config.js` if the GitHub repository name is different from `Zentra`.
+Set `VITE_API_URL` in the GitHub Actions build environment to `https://YOUR-RENDER-URL/api`. Build the client with `npm run build --prefix client`, then deploy `client/dist`. Update `client/vite.config.js` if the GitHub repository name is different from `Zentra-Full-Stack-Ecommerce`.
+
+## Challenges & Solutions
+
+During development, several challenges were faced:
+
+- MongoDB Atlas connection/authentication issues
+- CORS issues between frontend and backend
+- GitHub Pages routing with React Router
+- Render cold-start delays
+- API response compatibility issues
+
+These were resolved using JSON fallback storage, retry-based API requests, environment variable configuration, and deployment optimizations.
+
+## Live Demo
+
+🔗 https://sivanier.github.io/Zentra-Full-Stack-Ecommerce/
