@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Zentra Admin",
+    "email": "admin@zentra.store",
+    "password": "admin123",
+    "role": "admin",
+    "_id": "82734209bdec644980900f57",
+    "createdAt": "2026-06-25T06:57:30.654Z",
+    "updatedAt": "2026-06-25T06:57:30.654Z"
+  },
+  {
+    "name": "Demo Shopper",
+    "email": "shopper@zentra.store",
+    "password": "shopper123",
+    "role": "user",
+    "_id": "855beef031a09f47e54682d5",
+    "createdAt": "2026-06-25T06:57:30.659Z",
+    "updatedAt": "2026-06-25T06:57:30.659Z"
+  },
+  {
+    "_id": "36e08d4033d930efff3cb1e6",
+    "name": "ammu",
+    "email": "ammu@gmail.com",
+    "password": "$2a$12$nX.mK6inegpIlkFoFRPACu8cHb.XLOU8/BDJXuacchANpp7bP4v9O",
+    "role": "user",
+    "createdAt": "2026-06-25T07:14:05.433Z",
+    "updatedAt": "2026-06-25T07:14:05.433Z"
+  },
+  {
+    "_id": "0b0718f62d11195852ad1019",
+    "name": "anushka",
+    "email": "anushka@gmail.com",
+    "password": "$2a$12$wHPwgDQVav8GFee19znK6uoxSD5sVt81tGjrn93Rfq16xnfscHiLa",
+    "role": "user",
+    "createdAt": "2026-06-25T07:32:25.155Z",
+    "updatedAt": "2026-06-25T07:32:25.155Z"
+  },
+  {
+    "_id": "a9aba089c238c205a85e52af",
+    "name": "Rajani",
+    "email": "rajani@gmail.com",
+    "password": "$2a$12$FWq64UzMqvl.s9tEh9cLNuXyttcQcLToUEfmbEA6Cq2Svp2lr09KO",
+    "role": "user",
+    "createdAt": "2026-06-25T07:34:43.087Z",
+    "updatedAt": "2026-06-25T07:34:43.087Z"
+  }
+]

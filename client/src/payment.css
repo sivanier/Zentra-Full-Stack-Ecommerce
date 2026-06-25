@@ -1,0 +1,77 @@
+.payment h1 {
+  font-size: 42px;
+  letter-spacing: -2.5px;
+  margin: 0;
+}
+
+.eyebrow {
+  font: 11px 'DM Mono';
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.payment > div > p:not(.eyebrow) {
+  color: var(--muted);
+}
+
+.payment-layout {
+  display: grid;
+  grid-template-columns: 1fr 390px;
+  gap: 7vw;
+  margin-top: 35px;
+}
+
+.payment-card {
+  background: var(--card);
+  padding: 28px;
+  display: grid;
+  gap: 14px;
+  height: max-content;
+}
+
+.payment-card h2 {
+  margin: 0 0 8px;
+}
+
+.payment-card label {
+  border: 1px solid var(--line);
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.payment-card label.selected {
+  border-color: var(--acid);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--acid) 35%, transparent);
+  background: color-mix(in srgb, var(--acid) 8%, transparent);
+}
+
+.payment-card input:not([type='radio']) {
+  padding: 13px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  outline: 0;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.payment .summary .text-button {
+  display: inline-block;
+  margin-top: 14px;
+}
+
+@media (max-width: 760px) {
+  .payment-layout,
+  .split {
+    grid-template-columns: 1fr;
+  }
+}

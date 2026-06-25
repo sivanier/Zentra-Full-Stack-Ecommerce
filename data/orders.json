@@ -1,0 +1,60 @@
+[
+  {
+    "_id": "7eae6d6173c6ebc8df1b1861",
+    "user": "36e08d4033d930efff3cb1e6",
+    "items": [
+      {
+        "product": "edbd79d04ff12b9e71f04fe2",
+        "title": "Chrome Star Bag",
+        "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80",
+        "price": 2199,
+        "quantity": 1
+      },
+      {
+        "product": "9ce0be8ec9de2921849f4b88",
+        "title": "Noise Cancelling Pods",
+        "image": "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=900&q=80",
+        "price": 3499,
+        "quantity": 1
+      }
+    ],
+    "total": 5698,
+    "status": "placed",
+    "createdAt": "2026-06-25T07:14:49.369Z",
+    "updatedAt": "2026-06-25T07:14:49.369Z"
+  },
+  {
+    "_id": "57272c04d340b16b39568c67",
+    "user": "0b0718f62d11195852ad1019",
+    "items": [
+      {
+        "product": "2cca2f1bc495a3b0a834c009",
+        "title": "Pixel Frame Sunglasses",
+        "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=80",
+        "price": 1599,
+        "quantity": 1
+      }
+    ],
+    "total": 1599,
+    "status": "placed",
+    "createdAt": "2026-06-25T07:33:31.527Z",
+    "updatedAt": "2026-06-25T07:33:31.527Z"
+  },
+  {
+    "_id": "ef789593dbca463af21b0ac4",
+    "user": "0b0718f62d11195852ad1019",
+    "items": [
+      {
+        "product": "2d6e9f56b2ab3f64cc454b13",
+        "title": "Velvet Crush Lipstick",
+        "image": "https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,dpr-2/static/img/product/331220/matt-look-matte-crush-velvet-mousse-lipstick-cherry-maroon-and-blood-red-po2-20ml_1_display_1666154714_d3d17a9f.jpg",
+        "price": 699,
+        "quantity": 1
+      }
+    ],
+    "total": 699,
+    "status": "placed",
+    "createdAt": "2026-06-25T07:59:25.512Z",
+    "updatedAt": "2026-06-25T07:59:25.512Z"
+  }
+]
