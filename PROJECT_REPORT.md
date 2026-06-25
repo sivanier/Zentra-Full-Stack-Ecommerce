@@ -10,11 +10,11 @@ The React/Vite client consumes an Express REST API. Express connects to MongoDB 
 
 ## Tech Stack
 
-Frontend: React.js, Vite, CSS
-Backend: Node.js, Express.js
-Database: MongoDB Atlas + JSON fallback
-Authentication: JWT, bcrypt
-Deployment: GitHub Pages, Render
+- **Frontend:** React.js, Vite, CSS  
+- **Backend:** Node.js, Express.js  
+- **Database:** MongoDB Atlas + JSON fallback  
+- **Authentication:** JWT, bcrypt  
+- **Deployment:** GitHub Pages, Render
 
 ## Implemented functionality
 
