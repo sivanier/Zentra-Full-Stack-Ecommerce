@@ -9,9 +9,15 @@
   {
     "_id": "c69513c836471532a54c767a",
     "user": "36e08d4033d930efff3cb1e6",
-    "items": [],
+    "items": [
+      {
+        "_id": "4c14cb1838e3612cd48bb5a4",
+        "product": "8584d7bf8dd782ef540a62e5",
+        "quantity": 1
+      }
+    ],
     "createdAt": "2026-06-25T07:14:35.502Z",
-    "updatedAt": "2026-06-25T07:14:49.372Z"
+    "updatedAt": "2026-06-25T08:50:14.176Z"
   },
   {
     "_id": "b4bf440d670713ba405ebdec",

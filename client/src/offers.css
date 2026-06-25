@@ -1,0 +1,204 @@
+.promo-banner {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: clamp(28px, 5vw, 54px);
+  margin-bottom: 28px;
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 88% 20%, var(--acid) 0 18%, transparent 19%),
+    radial-gradient(circle at 75% 85%, #ff6f98 0 15%, transparent 16%),
+    linear-gradient(135deg, #1a171c 0%, #5b4dff 45%, #b1a5ff 100%);
+  color: #fffdfa;
+}
+
+.promo-banner p,
+.category-showcase p {
+  font: 11px 'DM Mono';
+  letter-spacing: 1.2px;
+  margin: 0 0 10px;
+}
+
+.promo-banner h2 {
+  font-size: clamp(40px, 7vw, 86px);
+  letter-spacing: -4px;
+  line-height: .9;
+  margin: 0;
+}
+
+.promo-banner span {
+  display: block;
+  max-width: 520px;
+  margin-top: 14px;
+  font-size: 17px;
+}
+
+.promo-banner button {
+  border: 0;
+  border-radius: 999px;
+  background: var(--acid);
+  color: #111;
+  padding: 15px 22px;
+  font-weight: 900;
+  box-shadow: 8px 8px 0 #ff6f98;
+}
+
+.offer-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 28px 0 38px;
+}
+
+.offer-strip article {
+  min-height: 165px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.offer-strip article:nth-child(2) {
+  background: #ff789d;
+  color: #171615;
+}
+
+.offer-strip article:nth-child(3) {
+  background: var(--acid);
+  color: #171615;
+}
+
+.offer-strip span {
+  font: 11px 'DM Mono';
+  letter-spacing: 1px;
+  color: var(--muted);
+}
+
+.offer-strip h3 {
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -1.2px;
+  margin: 18px 0 8px;
+}
+
+.offer-strip p {
+  margin: 0;
+  color: color-mix(in srgb, currentColor 75%, transparent);
+  font-size: 13px;
+}
+
+.category-showcase {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 22px;
+  align-items: stretch;
+  margin: 0 0 46px;
+}
+
+.category-showcase > div:first-child {
+  background: var(--ink);
+  color: var(--bg);
+  padding: 24px;
+}
+
+.category-showcase h2 {
+  margin: 0;
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.category-showcase > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.category-showcase button {
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--ink);
+  text-align: left;
+  min-height: 92px;
+  padding: 18px;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: -.6px;
+}
+
+.category-showcase button small {
+  display: block;
+  margin-top: 10px;
+  color: var(--muted);
+  font: 10px 'DM Mono';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.category-showcase button.active,
+.category-showcase button:hover {
+  background: var(--acid);
+  color: #111;
+  transform: translateY(-2px);
+}
+
+.deal-card .badges {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  z-index: 2;
+}
+
+.deal-card .product-image em {
+  position: static;
+}
+
+.deal-card .discount {
+  background: #ff6f98;
+  color: #111;
+}
+
+.price-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.price-stack del {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.price-stack strong {
+  font-size: 15px;
+  color: var(--ink);
+}
+
+@media (max-width: 760px) {
+  .promo-banner,
+  .category-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .promo-banner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .offer-strip,
+  .category-showcase > div:last-child {
+    grid-template-columns: 1fr;
+  }
+
+  .promo-banner h2 {
+    letter-spacing: -2.5px;
+  }
+}

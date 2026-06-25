@@ -56,5 +56,22 @@
     "status": "placed",
     "createdAt": "2026-06-25T07:59:25.512Z",
     "updatedAt": "2026-06-25T07:59:25.512Z"
+  },
+  {
+    "_id": "3642cce48622169578016e47",
+    "user": "36e08d4033d930efff3cb1e6",
+    "items": [
+      {
+        "product": "ceb352427fe5f9487880e7ec",
+        "title": "Urban Flex Shirt",
+        "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=800&q=80",
+        "price": 1899,
+        "quantity": 1
+      }
+    ],
+    "total": 1899,
+    "status": "placed",
+    "createdAt": "2026-06-25T08:49:03.417Z",
+    "updatedAt": "2026-06-25T08:49:03.417Z"
   }
 ]

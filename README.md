@@ -1,6 +1,6 @@
 # Zentra
 
-Zentra is a premium, Gen Z-styled full-stack e-commerce platform. It supports product discovery, filtering and search, authenticated shopping carts, checkout, order history, admin product controls, dark mode, and responsive layouts.
+Zentra is a premium, Gen Z-styled full-stack e-commerce platform. It supports product discovery, filtering and search, promotional sale sections, authenticated shopping carts, simulated checkout, order history, admin product controls, dark mode, and responsive layouts.
 
 ## Stack
 
@@ -41,6 +41,16 @@ Demo shopper: `shopper@zentra.store` / `shopper123`
 | Admin | `POST /api/products`, `PUT/DELETE /api/products/:id` |
 
 Protected calls use `Authorization: Bearer <token>`. Product write routes require an admin account.
+
+## Shopping and checkout experience
+
+- Homepage includes a “MEGA DROP SALE” promotional banner, offer cards, category highlights, discount badges, and old-price/current-price sale styling.
+- Product cards show visual deal labels such as `HOT DROP`, `HOT DEAL`, `20% OFF`, and `30% OFF`.
+- Checkout is simulated for project demo use only; no real payment gateway is connected.
+- Payment page supports UPI, Card, and Cash on Delivery method selection.
+- UPI checkout includes a dummy QR payment preview generated from:
+  `upi://pay?pa=zentra@upi&pn=ZentraStore&am=<amount>&cu=INR`
+- Confirming payment creates the order and redirects to Order History.
 
 ## Deployment
 
