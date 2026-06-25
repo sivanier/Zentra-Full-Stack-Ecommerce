@@ -84,6 +84,16 @@ export async function matchPassword(user, password) {
   return user.password.startsWith('$2') ? bcrypt.compare(password, user.password) : user.password === password;
 }
 
+export async function updateUserPassword(email, password) {
+  const users = await list('users');
+  const index = users.findIndex((user) => user.email.toLowerCase() === email?.toLowerCase());
+  if (index === -1) return null;
+  users[index].password = await bcrypt.hash(password, 12);
+  users[index].updatedAt = now();
+  await write('users', users);
+  return users[index];
+}
+
 export function publicUser(user) {
   return safeUser(user);
 }

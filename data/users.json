@@ -21,10 +21,10 @@
     "_id": "36e08d4033d930efff3cb1e6",
     "name": "ammu",
     "email": "ammu@gmail.com",
-    "password": "$2a$12$nX.mK6inegpIlkFoFRPACu8cHb.XLOU8/BDJXuacchANpp7bP4v9O",
+    "password": "$2a$12$aYCexKe8W1bAwTZpjzi3UuenrzG4KtSZM.l5rvsAMVJ22g948PtDm",
     "role": "user",
     "createdAt": "2026-06-25T07:14:05.433Z",
-    "updatedAt": "2026-06-25T07:14:05.433Z"
+    "updatedAt": "2026-06-25T09:49:40.421Z"
   },
   {
     "_id": "0b0718f62d11195852ad1019",
@@ -43,5 +43,14 @@
     "role": "user",
     "createdAt": "2026-06-25T07:34:43.087Z",
     "updatedAt": "2026-06-25T07:34:43.087Z"
+  },
+  {
+    "_id": "c114d0dbb03403964c6f9b8f",
+    "name": "Krishnendhu",
+    "email": "kichu@gmail.com",
+    "password": "$2a$12$kgCq25Ey4Gd90PSPbVYY0.k73DhyH8.k6GCb/FRmrNVLwXKpAZXlC",
+    "role": "user",
+    "createdAt": "2026-06-25T09:50:57.423Z",
+    "updatedAt": "2026-06-25T09:50:57.423Z"
   }
 ]

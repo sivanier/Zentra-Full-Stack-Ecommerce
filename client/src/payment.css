@@ -157,6 +157,19 @@
   line-height: 1.5;
 }
 
+.reset-form h3 {
+  margin: 0 0 6px;
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+
+.reset-success {
+  margin: 0;
+  color: #318554;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
 @media (max-width: 760px) {
   .payment-layout,
   .split {
